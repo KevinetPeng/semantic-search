@@ -1,0 +1,29 @@
+meta {
+  name: search
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8000/api/search
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "query": "what is AI",
+    "texts": [
+      "The capital of France is Paris",
+      "PyTorch is a machine learning framework based on the Torch library.",
+      "The average cat lifespan is between 13-17 years", 
+      "openAI", 
+      "test",
+    "test",
+    "test",
+    "test",
+    "test",
+    "test",
+    "test"]
+  }
+}
